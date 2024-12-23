@@ -32,3 +32,8 @@ IV. What is Spring IOC
 • BeanFatory (org.springframework.beans.factory.BeanFactory) allows you to configure Beans (in an XML file or via annotations) and manage them (instantiation, dependency management).
 
 • ApplicationContext (org.springframework.context.ApplicationContext) adds advanced features to the BeanFactory (facilitates integration with Spring AOP, etc.).
+    • Spring va permettre à chaque couche de s'abstraire de sa ou ses couches inférieures (injection de dépendance) : 
+        ◦ Le code de l'application est beaucoup plus lisible. 
+        ◦ Le maintien de l'application est facilité. 
+        ◦ Les tests unitaires sont simplifiés. 
+        ◦ Spring gère les dépendances entre les beans dans un fichier XML ou via les annotations.
