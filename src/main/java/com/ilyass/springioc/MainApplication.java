@@ -25,3 +25,9 @@ public class MainApplication {
  *
  *     • Spring ignorera toute classe ne se trouvant pas dans ces packages.
  */
+
+/*
+ *     • L’annotation @Bean s’applique sur les méthodes.
+ *     • L’instance retournée par la méthode annotée par @Bean est ajoutée au niveau du conteneur de Spring.
+ *     • Remarquez que la méthode getDao() ci-dessus joue le rôle d’une fabrique. C’est le principe de l’injection par Factory.
+ */

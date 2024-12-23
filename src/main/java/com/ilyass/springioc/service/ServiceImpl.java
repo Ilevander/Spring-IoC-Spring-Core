@@ -71,3 +71,12 @@ public class ServiceImpl implements IService{
 
  */
 
+/*
+    • Remarquez que nous n’avons pas annoté le constructeur par @Autowired. Car, comme expliqué ci-dessus, puisque la classe ServiceIml contient un seul constructeur, l’annotation @Autowired devient facultative.
+
+    • Remarquez que Spring injectera le Bean moyennant cette surcharge du constructeur. Il s’agit ici de l’injection par Constructeur.
+
+    • Nous avons utilisé @Qualifier puisque dans cet exemple, nous avons deux Bean qui implémentent la même interface IDao.
+
+    • Refaire le test précédent et vérifier que l’injection du Bean se fait sans aucun problème.
+ */
