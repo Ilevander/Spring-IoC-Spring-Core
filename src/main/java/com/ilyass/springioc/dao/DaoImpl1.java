@@ -35,3 +35,11 @@ public class DaoImpl1 implements IDao {
         return repository.stream().filter(a -> a.getId().equals(id)).findAny().orElse(null);
     }
 }
+
+/*
+    • L’annotation @Repository de Spring Context permet à Spring de gérer le Bean annoté par cette dernière.
+
+    • L’annotation @Repository hérite de l’annotation @Component.
+
+    • L’annotation @Component permet d’ajouter le bean annoté par cette dernière au conteneur de Spring. Les beans se trouvant dans le conteneur de Spring sont des « Managed Bean ».
+ */

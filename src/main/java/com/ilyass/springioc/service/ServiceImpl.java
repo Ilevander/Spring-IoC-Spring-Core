@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/*
+NB : Spring crée par défaut les Beans sous forme de Singleton (une seule instance).
+Si vous voulez que Spring crée à chaque fois une nouvelle instance du même Bean, il suffit d’annoter votre classe par : @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE).
+ */
 //@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 @Service
 public class ServiceImpl implements IService{
