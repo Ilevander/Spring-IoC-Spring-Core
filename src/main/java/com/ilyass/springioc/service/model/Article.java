@@ -13,3 +13,10 @@ public class Article {
     private Double price;
     private Double quantity;
 }
+/*
+    •  @Data est une annotation de Lombok. Elle permet d’ajouter au niveau du fichier .class 
+        ◦ Les getters, les setters, la méthode equals, la méthode hashCode et la méthode toString.
+    • @NoArgsConstructor est une annotation de Lombok. Elle permet d’ajouter au niveau du fichier .class le constructeur par défaut.
+
+    • @AllArgsConstructor est une annotation de Lombok. Elle permet d’ajouter au niveau du fichier .class le constructeur avec l’ensemble des paramètres.
+ */
