@@ -20,6 +20,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<!--La dépendance suivante permet de récupérer toutes librairies nécessaires pour Spring IOC et Spring Context :
+
+	-->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -31,11 +34,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!--La dépendance suivante permet de récupérer toutes librairies nécessaires pour Spring IOC et Spring Context :
+        ◦ Le conteneur léger de Spring est implémenté par Spring IOC.
+        ◦ Spring Context offre plusieurs services, notamment les annotations @Service, @Repository, @Autowired et @Bean.
+	     -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 		</dependency>
 
+		<!--La dépendance suivante permet de récupérer le Framework Lombok :
+        Lombok permet d’ajouter au niveau du fichier byte-code (le fichier .class), les getters, les setters, le constructeur par défaut,
+        le constructeur avec des paramètres, la méthode toString, la méthode hashCode, la méthode equals, etc.
+	     -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -43,6 +54,11 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!--La dépendance suivante permet de récupérer les librairies nécessaires pour Junit version 5 :
+        ◦ Junit est un Framework open source de la communauté Jakarta Apache.
+        ◦ Junit permet de réaliser les tests unitaires très facilement.
+        ◦ Junit offre plusieurs annotations : @Test, @TestBeforeAll, @TestAfterAll, etc.
+	     -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-api</artifactId>
