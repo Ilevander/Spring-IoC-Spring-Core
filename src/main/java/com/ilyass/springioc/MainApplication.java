@@ -17,3 +17,11 @@ public class MainApplication {
         return new DaoImpl1();
     }
 }
+
+/*
+ *     • L’annotation @Configuration est une classe Java Config. Elle est équivalente à un fichier XML. Cette classe devrait contenir les Bean à utiliser dans l’application.
+ *
+ *     • L’annotation  @ComponentScan permet à Spring de gérer toutes les classes se trouvant au niveau du package ma.formations.ioc et également au niveau des sous packages de ce dernier.
+ *
+ *     • Spring ignorera toute classe ne se trouvant pas dans ces packages.
+ */
